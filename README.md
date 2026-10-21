@@ -45,8 +45,17 @@ The script **must run as root**. Without root it can't see other users' processe
 | `--php X.Y` | Check only this PHP-FPM version, e.g. `8.4` | all installed versions |
 | `-h`, `--help` | Show usage | |
 
+### Examples
+
 ```bash
-sudo ./check_compromise.sh --hours 72 --php 8.4
+# Check only PHP 8.4, last 24 hours
+sudo ./check_compromise.sh --php 8.4
+
+# Check PHP 8.4 over the last 3 days
+sudo ./check_compromise.sh --php 8.4 --hours 72
+
+# Check every installed PHP version over the last week
+sudo ./check_compromise.sh --hours 168
 ```
 
 ### Exit codes
