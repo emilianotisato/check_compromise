@@ -42,11 +42,11 @@ The script **must run as root**. Without root it can't see other users' processe
 | Option | What it does | Default |
 | --- | --- | --- |
 | `--hours N` | How far back the time-based checks look | `24` |
-| `--php X.Y` | Check only this PHP-FPM version, e.g. `8.3` | all installed versions |
+| `--php X.Y` | Check only this PHP-FPM version, e.g. `8.4` | all installed versions |
 | `-h`, `--help` | Show usage | |
 
 ```bash
-sudo ./check_compromise.sh --hours 72 --php 8.3
+sudo ./check_compromise.sh --hours 72 --php 8.4
 ```
 
 ### Exit codes
