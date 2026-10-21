@@ -21,12 +21,6 @@ curl -fsSL -o check_compromise.sh \
   https://raw.githubusercontent.com/emilianotisato/check_compromise/main/check_compromise.sh
 ```
 
-Read it before you run it. It is short, and you will run it as root:
-
-```bash
-less check_compromise.sh
-```
-
 Make it executable:
 
 ```bash
